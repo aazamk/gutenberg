@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyBook</string>
+    <string name="empty_list">No books found!</string>
+    <string name="an_error_occurred">An error occurred</string>
+    <string name="text_social">A social cataloging website that allows you to freely search its database of books,annotations and reviews</string>
+    <string name="no_viewable_format">No viewable version available</string>
+    <string name="ok">Ok</string>
+</resources>

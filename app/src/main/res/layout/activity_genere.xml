@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/purple_light"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_heading"
+            android:background="@drawable/pattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.example.mybook.view.CustomFontTextView
+            android:id="@+id/tv_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            app:custometype_face="mont_semibold"
+            android:text="Gutenberg Project"
+            android:textColor="@color/purple"
+            android:textSize="40sp"
+            />
+
+        <com.example.mybook.view.CustomFontTextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/text_social"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/grey_dark"
+            android:textSize="14sp"
+            app:custometype_face="mont_regular"
+            android:layout_below="@+id/tv_heading"/>
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/genre_row"
+            android:layout_below="@+id/rl_heading"/>
+
+    </RelativeLayout>
+</layout>
